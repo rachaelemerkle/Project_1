@@ -4,6 +4,7 @@ package com.shift.android.beautifulbulldog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,7 @@ public class BulldogListFragment extends Fragment {
         View view= inflater.inflate(R.layout.fragment_bulldog_list, container, false);
 
         bulldogList= (ListView) view.findViewById(R.id.bulldog_list);
+        Log.v("hi", "hi");
 
         MainActivity mainActivity = (MainActivity) this.getActivity();
 
