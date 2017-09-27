@@ -16,7 +16,7 @@ public class BulldogActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bulldog);
-        textView = (TextView) findViewById(R.id.textView);
+        textView = (TextView) findViewById(R.id.name_profile);
         realm = Realm.getDefaultInstance();
         String id = (String) getIntent().getStringExtra("bulldog");
         Bulldog bulldog = realm.where(Bulldog.class).equalTo("id",id).findFirst();

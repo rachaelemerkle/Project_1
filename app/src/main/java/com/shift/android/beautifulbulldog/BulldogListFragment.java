@@ -30,7 +30,6 @@ public class BulldogListFragment extends Fragment {
         View view= inflater.inflate(R.layout.fragment_bulldog_list, container, false);
 
         bulldogList= (ListView) view.findViewById(R.id.bulldog_list);
-        Log.v("hi", "hi");
 
         MainActivity mainActivity = (MainActivity) this.getActivity();
 
